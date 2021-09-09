@@ -1,8 +1,8 @@
-import './App.css';
+import { MainLayout } from "./modules/layout";
 
-function App() {
+const App = () => {
   return (
-    <div></div>
+    <MainLayout></MainLayout>
   );
 }
 
