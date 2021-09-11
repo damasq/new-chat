@@ -4,9 +4,10 @@ import { ReactComponent as ProfileInactive } from './img/profile-inactive.svg';
 import { ReactComponent as RecentInactive } from './img/recent-inactive.svg';
 import * as Components from './styles'
 
-export const MainLayout = () => {
+const MainLayout = (props: any) => {
   return (
     <Components.Container>
+      {props.children}
       <Components.Tabs>
         <Components.Tab>
           <CallsInactive />
@@ -24,3 +25,5 @@ export const MainLayout = () => {
     </Components.Container>
   );
 }
+
+export default MainLayout;
