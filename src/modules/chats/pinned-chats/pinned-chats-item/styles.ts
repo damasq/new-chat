@@ -12,7 +12,7 @@ export const Container = styled.div`
   padding: 16px 16px 20px;
 `
 
-export const Avatar = styled.div`
+export const Avatar = styled.img`
   grid-area: avatar;
   /* position: relative; */
   width: 36px;

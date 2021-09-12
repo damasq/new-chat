@@ -15,7 +15,7 @@ export const Container = styled.div`
   }
 `
 
-export const Avatar = styled.div`
+export const Avatar = styled.img`
   grid-area: avatar;
   /* position: relative; */
   width: 36px;

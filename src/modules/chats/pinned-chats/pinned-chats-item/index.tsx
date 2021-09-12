@@ -1,11 +1,18 @@
+import { Chat } from "../../types/chat";
 import { Container, Avatar, LastMessageText, Username } from "./styles";
 
-const PinnedChatsItem = () => {
+type Props = {
+  chat: Chat;
+}
+
+const PinnedChatsItem = (props: Props) => {
+  const { chat } = props;
+
   return (
     <Container>
-      <Avatar />
-      <Username>Mike Wazowski</Username>
-      <LastMessageText>See you later...</LastMessageText>
+      <Avatar src={chat.user.avatar} />
+      <Username>{chat.user.firstName} {chat.user.lastName}</Username>
+      <LastMessageText>{chat.lastMessageText}</LastMessageText>
     </Container>
   )
 }
