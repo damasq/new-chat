@@ -1,13 +1,21 @@
+import dayjs from "dayjs";
+import { Chat } from "../../types/chat";
 import { Container, Avatar, LastMessageText, Username, LastMessageDate, UnreadMessagesCount } from "./styles";
 
-const RecentChatsItem = () => {
+type Props = {
+  chat: Chat
+}
+
+const RecentChatsItem = (props: Props) => {
+  const { chat } = props;
+
   return (
     <Container>
-      <Avatar />
-      <Username>Darlene Steward</Username>
-      <LastMessageText>Pls take a look at the images.</LastMessageText>
-      <LastMessageDate>27.10</LastMessageDate>
-      <UnreadMessagesCount>3</UnreadMessagesCount>
+      <Avatar src={chat.user.avatar} />
+      <Username>{chat.user.firstName} {chat.user.lastName}</Username>
+      <LastMessageText>{chat.lastMessageText}</LastMessageText>
+      <LastMessageDate>{dayjs(chat.lastMessageDate).fromNow()}</LastMessageDate>
+      <UnreadMessagesCount>{chat.unreadMessagesCount}</UnreadMessagesCount>
     </Container>
   )
 }

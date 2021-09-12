@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
   height: 100%;
+  z-index: 100;
 `
 
 export const Tabs = styled.div`
@@ -12,6 +13,7 @@ export const Tabs = styled.div`
   display: flex;
   justify-content: space-evenly;
   padding: 8px 0;
+  background-color: #fff;
   box-shadow: 0px -12px 50px -10px rgba(34, 60, 80, 0.2);
 `
 
