@@ -8,6 +8,10 @@ export const Header = styled.div`
 
 `
 
+export const Title = styled.h2`
+
+`
+
 export const ChatsList = styled.div`
   display: flex;
   flex-wrap: wrap;

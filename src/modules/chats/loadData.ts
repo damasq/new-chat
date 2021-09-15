@@ -9,7 +9,7 @@ function generateRandomChat(): Chat {
       firstName: faker.name.firstName(),
       lastName: faker.name.lastName(),
       avatar: faker.image.avatar(),
-      status: faker.datatype.number(1) as 0 | 1,
+      online: faker.datatype.number(1) as 0 | 1,
     },
     lastMessageText: faker.lorem.sentence(),
     unreadMessagesCount: faker.datatype.number(5),

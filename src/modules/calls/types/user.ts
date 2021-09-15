@@ -5,5 +5,6 @@ export type User = {
   firstName: string;
   lastName: string;
   avatar: Avatar;
-  status: 0 | 1;
+  online: 0 | 1;
+  status?: string;
 };

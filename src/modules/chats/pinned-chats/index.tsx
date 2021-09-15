@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { loadPinnedChats } from "../loadData"
 import { Chat } from "../types/chat"
 import PinnedChatsItem from "./pinned-chats-item"
-import { ChatsList, Container, Header } from "./styles"
+import { ChatsList, Container, Header, Title } from "./styles"
 
 const PinnedChats = () => {
   const [pinnedChats, setPinnedChats] = useState<Chat[]>([])
@@ -13,7 +13,7 @@ const PinnedChats = () => {
   return (
     <Container>
       <Header>
-        <h2>Pinned chats</h2>
+        <Title>Pinned chats</Title>
       </Header>
       <ChatsList>
         {pinnedChats.map(chat => <PinnedChatsItem chat={chat} />)}
