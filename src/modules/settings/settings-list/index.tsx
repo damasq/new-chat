@@ -6,6 +6,7 @@ import { ReactComponent as IconChat } from './img/chat.svg'
 import { ReactComponent as IconData } from './img/data.svg'
 import { ReactComponent as IconPrivacy } from './img/privacy.svg'
 import { ReactComponent as IconAbout } from './img/about.svg'
+import ToggleButton from "../../../common/toggle-button"
 
 const SettingsList = () => {
   return (
@@ -14,6 +15,7 @@ const SettingsList = () => {
       <SettingContainer>
         <IconDarkMode />
         <Setting>Dark mode</Setting>
+        <ToggleButton />
       </SettingContainer>
 
       <SettingContainer>
